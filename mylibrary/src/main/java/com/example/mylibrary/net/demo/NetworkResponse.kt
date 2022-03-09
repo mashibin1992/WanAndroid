@@ -1,4 +1,4 @@
-package com.example.mylibrary.net
+package com.example.mylibrary.net.demo
 
 import com.example.mylibrary.net.exception.ApiException
 import okhttp3.Headers
