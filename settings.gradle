@@ -1,4 +1,4 @@
-pluginManagement {
+ pluginManagement {
     repositories {
         gradlePluginPortal()
         google()
@@ -10,6 +10,10 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+//        // hms
+//        maven { url 'http://developer.huawei.com/repo/'}
+//        // fcm
+//        maven { url "https://maven.google.com" }
     }
 }
 rootProject.name = "WanAndroid"
