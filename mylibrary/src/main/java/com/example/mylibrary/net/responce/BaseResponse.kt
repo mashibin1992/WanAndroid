@@ -1,4 +1,4 @@
-package com.example.mylibrary.net
+package com.example.mylibrary.net.responce
 
 class BaseResponse<T>(
     val data: T?,

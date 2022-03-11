@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">WanAndroid</string>
+    <string name="exit_twice">再次返回将推出应用</string>
+    <string name="main_tab">首页</string>
+    <string name="me_tab">我的</string>
+    <string name="cart_tab">购物车</string>
+    <string name="category_tab">分类</string>
 </resources>

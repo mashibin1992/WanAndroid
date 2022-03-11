@@ -4,16 +4,155 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
-    <TextView
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/tab_bar_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/tab_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/tabIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginLeft="36dp"
+        android:button="@drawable/ic_main_src_sel"
+        android:checked="true"
+        app:layout_constraintBottom_toTopOf="@+id/mainText"
+        app:layout_constraintEnd_toStartOf="@+id/tabIcon2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tab_bar_layout"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <CheckedTextView
+        android:id="@+id/mainText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:checked="true"
+        android:text="@string/main_tab"
+        android:textColor="@color/main_tab_text_color_sel"
+        app:layout_constraintBottom_toBottomOf="@+id/tab_bar_layout"
+        app:layout_constraintEnd_toEndOf="@+id/tabIcon"
+        app:layout_constraintStart_toStartOf="@+id/tabIcon"
+        app:layout_constraintTop_toBottomOf="@+id/tabIcon" />
+
+
+    <CheckBox
+        android:id="@+id/tabIcon2"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:checked="false"
+        android:layout_marginLeft="36dp"
+        android:button="@drawable/ic_category_src_sel"
+        app:layout_constraintBottom_toTopOf="@+id/categoryText"
+        app:layout_constraintEnd_toStartOf="@+id/tabIcon3"
+        app:layout_constraintStart_toEndOf="@+id/tabIcon"
+        app:layout_constraintTop_toTopOf="@+id/tab_bar_layout"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <CheckedTextView
+        android:id="@+id/categoryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/category_tab"
+        android:textColor="@color/main_tab_text_color_sel"
+        app:layout_constraintEnd_toEndOf="@+id/tabIcon2"
+        app:layout_constraintStart_toStartOf="@+id/tabIcon2"
+        app:layout_constraintTop_toBottomOf="@+id/tabIcon2" />
+
+    <CheckBox
+        android:id="@+id/tabIcon3"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:checked="false"
+        android:layout_marginLeft="36dp"
+        android:button="@drawable/ic_cart_src_sel"
+        app:layout_constraintEnd_toStartOf="@+id/tabIcon4"
+        app:layout_constraintStart_toEndOf="@+id/tabIcon2"
+        app:layout_constraintTop_toTopOf="@+id/tab_bar_layout"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <CheckedTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cart_tab"
+        android:textColor="@color/main_tab_text_color_sel"
+        app:layout_constraintEnd_toEndOf="@+id/tabIcon3"
+        app:layout_constraintStart_toStartOf="@+id/tabIcon3"
+        app:layout_constraintTop_toBottomOf="@+id/tabIcon3" />
+
+    <CheckBox
+        android:id="@+id/tabIcon4"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:button="@drawable/ic_me_src_sel"
+        android:checked="false"
+        app:layout_constraintBottom_toTopOf="@+id/meText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tabIcon3"
+        app:layout_constraintTop_toTopOf="@+id/tab_bar_layout"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <CheckedTextView
+        android:id="@+id/meText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="@string/me_tab"
+        android:textColor="@color/main_tab_text_color_sel"
+        app:layout_constraintEnd_toEndOf="@+id/tabIcon4"
+        app:layout_constraintStart_toStartOf="@+id/tabIcon4"
+        app:layout_constraintTop_toBottomOf="@+id/tabIcon4" />
+
+
+    <!--    <View-->
+    <!--        android:id="@+id/view1"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@id/tab_bar_layout"-->
+    <!--        app:layout_constraintEnd_toStartOf="@id/view2"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="@id/tab_bar_layout" />-->
+
+    <!--    <View-->
+    <!--        android:id="@+id/view2"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@id/tab_bar_layout"-->
+    <!--        app:layout_constraintEnd_toStartOf="@id/view3"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/view1"-->
+    <!--        app:layout_constraintTop_toTopOf="@id/tab_bar_layout" />-->
+
+    <!--    <View-->
+    <!--        android:id="@+id/view3"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@id/tab_bar_layout"-->
+    <!--        app:layout_constraintEnd_toStartOf="@id/view4"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/view2"-->
+    <!--        app:layout_constraintTop_toTopOf="@id/tab_bar_layout" />-->
+
+    <!--    <View-->
+    <!--        android:id="@+id/view4"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@id/tab_bar_layout"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/view3"-->
+    <!--        app:layout_constraintTop_toTopOf="@id/tab_bar_layout" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

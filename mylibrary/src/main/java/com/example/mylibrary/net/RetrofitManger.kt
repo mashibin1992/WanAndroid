@@ -1,5 +1,7 @@
 package com.example.mylibrary.net
 
+import com.example.mylibrary.BuildConfig
+import com.example.mylibrary.net.constants.BaseConfig
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -14,7 +16,7 @@ object RetrofitManger {
     private const val CONNECTION_TIME_OUT = 10L
     private const val READ_TIME_OUT = 10L
 
-    var API_URL = "https://www.wanandroid.com"
+    var API_URL = BaseConfig.baseUrl
 
      fun getApiService(): Apis {
         if (mApi == null) {

@@ -14,8 +14,6 @@ abstract class BaseActivity : AppCompatActivity() {
 
     abstract fun setLayout(): Int
 
-//    abstract fun setLayout(): Int
-
     abstract fun initView()
 
     abstract fun initData()
