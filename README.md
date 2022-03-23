@@ -4,3 +4,6 @@
 
 #Android Studio Bumblebee | 2021.1.1（大黄蜂版本使用介绍）
 #https://blog.csdn.net/qq_38436214/article/details/123199503
+
+#jetPack地址
+#https://developer.android.com/jetpack/androidx/releases/slidingpanelayout?hl=zh-cn

@@ -1,16 +1,40 @@
 package com.example.wanandroid.ui
 
+import android.os.Handler
+import android.os.Looper
+import android.os.Message
+import android.os.SystemClock
+import android.util.Log
 import android.view.KeyEvent
 import com.example.mylibrary.base.BaseActivity
 import com.example.mylibrary.extensions.toast
+import com.example.wanandroid.QaData
 import com.example.wanandroid.R
-import kotlinx.android.synthetic.main.activity_main.*
+
 
 class MainActivity : BaseActivity() {
+
+
+    // 创建一个Handler
+
 
     override fun setLayout() = R.layout.activity_main
 
     override fun initView() {
+
+//        val mutableListOf = mutableListOf<String>()
+//        val mutableListOf1 = mutableListOf<String>()
+//        for (i in 0..5) {
+//            mutableListOf.add("测试$i")
+//            mutableListOf1.add("测试数据$i")
+//        }
+//        val qaData = QaData(mutableListOf, mutableListOf1)
+//
+//        mHandler.sendEmptyMessage(1)
+//        val obtainMessage = mHandler.obtainMessage()
+//        obtainMessage.obj = qaData
+//        mHandler.sendMessage(obtainMessage)
+
 
     }
 

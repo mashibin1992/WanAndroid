@@ -5,7 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.MainActivity">
-
+    <Button
+        android:id="@+id/btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -53,9 +59,9 @@
         android:id="@+id/tabIcon2"
         android:layout_width="wrap_content"
         android:layout_height="28dp"
-        android:checked="false"
         android:layout_marginLeft="36dp"
         android:button="@drawable/ic_category_src_sel"
+        android:checked="false"
         app:layout_constraintBottom_toTopOf="@+id/categoryText"
         app:layout_constraintEnd_toStartOf="@+id/tabIcon3"
         app:layout_constraintStart_toEndOf="@+id/tabIcon"
@@ -76,9 +82,9 @@
         android:id="@+id/tabIcon3"
         android:layout_width="wrap_content"
         android:layout_height="28dp"
-        android:checked="false"
         android:layout_marginLeft="36dp"
         android:button="@drawable/ic_cart_src_sel"
+        android:checked="false"
         app:layout_constraintEnd_toStartOf="@+id/tabIcon4"
         app:layout_constraintStart_toEndOf="@+id/tabIcon2"
         app:layout_constraintTop_toTopOf="@+id/tab_bar_layout"
@@ -154,5 +160,26 @@
     <!--        app:layout_constraintEnd_toEndOf="parent"-->
     <!--        app:layout_constraintStart_toEndOf="@id/view3"-->
     <!--        app:layout_constraintTop_toTopOf="@id/tab_bar_layout" />-->
+<!--    <androidx.constraintlayout.widget.Group-->
+<!--        android:id="@+id/allView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:constraint_referenced_ids="image,tv" />-->
 
+<!--    <TextView-->
+<!--        android:id="@+id/tv"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="hahah"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/image" />-->
+
+<!--    <androidx.constraintlayout.utils.widget.ImageFilterButton-->
+<!--        android:id="@+id/image"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:background="@drawable/ic_main"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 </androidx.constraintlayout.widget.ConstraintLayout>

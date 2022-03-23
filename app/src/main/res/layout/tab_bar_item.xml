@@ -6,29 +6,29 @@
     tools:ignore="SmallSp"
     android:layout_height="match_parent">
 
-    <CheckBox
-        android:id="@+id/tabIcon2"
-        android:layout_width="wrap_content"
-        android:layout_height="28dp"
-        android:button="@drawable/ic_category_src_sel"
-        android:checked="false"
-        app:layout_constraintBottom_toTopOf="@id/tab_text2"
-        app:layout_constraintEnd_toStartOf="@id/tabIcon3"
-        app:layout_constraintStart_toEndOf="@id/tabIcon1"
-        app:layout_constraintTop_toTopOf="@id/tab_bar_layout"
-        app:layout_constraintVertical_chainStyle="packed" />
+<!--    <CheckBox-->
+<!--        android:id="@+id/tabIcon2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="28dp"-->
+<!--        android:button="@drawable/ic_category_src_sel"-->
+<!--        android:checked="false"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/tab_text2"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/tabIcon3"-->
+<!--        app:layout_constraintStart_toEndOf="@id/tabIcon1"-->
+<!--        app:layout_constraintTop_toTopOf="@id/tab_bar_layout"-->
+<!--        app:layout_constraintVertical_chainStyle="packed" />-->
 
-    <CheckedTextView
-        android:id="@+id/tab_text2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
-        android:text="@string/category_tab"
-        android:textColor="@color/main_tab_text_color_sel"
-        android:textSize="10sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/tabIcon2"
-        app:layout_constraintStart_toStartOf="@id/tabIcon2"
-        app:layout_constraintTop_toBottomOf="@id/tabIcon2" />
+<!--    <CheckedTextView-->
+<!--        android:id="@+id/tab_text2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="2dp"-->
+<!--        android:text="@string/category_tab"-->
+<!--        android:textColor="@color/main_tab_text_color_sel"-->
+<!--        android:textSize="10sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/tabIcon2"-->
+<!--        app:layout_constraintStart_toStartOf="@id/tabIcon2"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/tabIcon2" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
