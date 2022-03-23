@@ -7,3 +7,6 @@
 
 #jetPack地址
 #https://developer.android.com/jetpack/androidx/releases/slidingpanelayout?hl=zh-cn
+
+#Android事件分发机制详解：史上最全面、最易懂
+#https://www.jianshu.com/p/38015afcdb58
