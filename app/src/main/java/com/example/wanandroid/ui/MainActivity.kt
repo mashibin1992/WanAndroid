@@ -16,7 +16,21 @@ class MainActivity : BaseActivity() {
 
 
     // 创建一个Handler
-
+    private val mHandler: Handler = object : Handler() {
+        override fun handleMessage(msg: Message) {
+            super.handleMessage(msg)
+            when (msg.what) {
+                1 -> {
+                    val qaData = msg.obj as QaData
+                    Log.e("Kotlin", "接收通过sendEmptyMessageDelayed()发送过来的消息${qaData.toString()}" )
+                }
+                // 这里的else相当于Java中switch的default;
+                else -> {
+                    val mBundle = msg?.data
+                }
+            }
+        }
+    }
 
     override fun setLayout() = R.layout.activity_main
 

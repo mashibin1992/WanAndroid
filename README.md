@@ -10,3 +10,6 @@
 
 #Android事件分发机制详解：史上最全面、最易懂
 #https://www.jianshu.com/p/38015afcdb58
+
+# handler详解视频
+#https://www.bilibili.com/video/BV1Uz4y1X7VV/?spm_id_from=autoNext
