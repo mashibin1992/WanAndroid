@@ -22,7 +22,7 @@ class MainActivity : BaseActivity() {
             when (msg.what) {
                 1 -> {
                     val qaData = msg.obj as QaData
-                    Log.e("Kotlin", "接收通过sendEmptyMessageDelayed()发送过来的消息${qaData.toString()}" )
+                    Log.e("Kotlin", "接收通过sendEmptyMessageDelayed()发送过来的消息${qaData.toString()}")
                 }
                 // 这里的else相当于Java中switch的default;
                 else -> {
@@ -36,18 +36,18 @@ class MainActivity : BaseActivity() {
 
     override fun initView() {
 
-//        val mutableListOf = mutableListOf<String>()
-//        val mutableListOf1 = mutableListOf<String>()
-//        for (i in 0..5) {
-//            mutableListOf.add("测试$i")
-//            mutableListOf1.add("测试数据$i")
-//        }
-//        val qaData = QaData(mutableListOf, mutableListOf1)
+        val mutableListOf = mutableListOf<String>()
+        val mutableListOf1 = mutableListOf<String>()
+        for (i in 0..5) {
+            mutableListOf.add("测试$i")
+            mutableListOf1.add("测试数据$i")
+        }
+        val qaData = QaData(mutableListOf, mutableListOf1)
 //
-//        mHandler.sendEmptyMessage(1)
-//        val obtainMessage = mHandler.obtainMessage()
-//        obtainMessage.obj = qaData
-//        mHandler.sendMessage(obtainMessage)
+        mHandler.sendEmptyMessage(1)
+        val obtainMessage = mHandler.obtainMessage()
+        obtainMessage.obj = qaData
+        mHandler.sendMessage(obtainMessage)
 
 
     }
@@ -72,5 +72,10 @@ class MainActivity : BaseActivity() {
             return true
         }
         return super.onKeyDown(keyCode, event)
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        mHandler.removeCallbacksAndMessages(this)
     }
 }
