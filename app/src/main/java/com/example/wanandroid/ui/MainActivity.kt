@@ -8,6 +8,7 @@ import android.util.Log
 import android.view.KeyEvent
 import com.example.mylibrary.base.BaseActivity
 import com.example.mylibrary.extensions.toast
+import com.example.mylibrary.net.model.HomePageViewModel
 import com.example.wanandroid.QaData
 import com.example.wanandroid.R
 
@@ -32,6 +33,8 @@ class MainActivity : BaseActivity() {
         }
     }
 
+    private var viewMode = HomePageViewModel()
+
     override fun setLayout() = R.layout.activity_main
 
     override fun initView() {
@@ -49,10 +52,14 @@ class MainActivity : BaseActivity() {
         obtainMessage.obj = qaData
         mHandler.sendMessage(obtainMessage)
 
+        viewMode.getArticles(1).observe(this, {
 
+        })
     }
 
     override fun initData() {
+
+
     }
 
 

@@ -13,3 +13,6 @@
 
 # handler详解视频
 #https://www.bilibili.com/video/BV1Uz4y1X7VV/?spm_id_from=autoNext
+
+#Android 各版本迭代改动与适配
+#https://www.jianshu.com/p/97e255602138

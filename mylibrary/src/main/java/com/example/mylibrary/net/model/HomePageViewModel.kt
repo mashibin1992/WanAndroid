@@ -10,6 +10,7 @@ import com.example.mylibrary.net.bean.DataX
 import com.example.mylibrary.util.LogUtil
 import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.launch
+import kotlin.reflect.KProperty
 
 class HomePageViewModel : ViewModel() {
     private val TAG: String = this.javaClass.simpleName
