@@ -16,3 +16,6 @@
 
 #Android 各版本迭代改动与适配
 #https://www.jianshu.com/p/97e255602138
+
+#大厂Android性能分析与优化方案总结
+#https://www.bilibili.com/video/BV1th411b7h3?spm_id_from=333.337.search-card.all.click
