@@ -19,3 +19,6 @@
 
 #大厂Android性能分析与优化方案总结
 #https://www.bilibili.com/video/BV1th411b7h3?spm_id_from=333.337.search-card.all.click
+
+#【Android framework教程】2022最新整理178P合集含framework面试
+#https://www.bilibili.com/video/BV1x64y1x7JF?p=6&spm_id_from=pageDriver

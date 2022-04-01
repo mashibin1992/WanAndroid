@@ -30,7 +30,7 @@ android {
 }
 
 dependencies {
-    ext{
+    ext {
 
     }
     implementation 'androidx.core:core-ktx:1.7.0'
@@ -58,7 +58,11 @@ dependencies {
     api 'com.google.code.gson:gson:2.8.6'
     // 协程
     api "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.1"
-
-
+    //支持ConcatAdapter 的RecyclerView
+    api "androidx.recyclerview:recyclerview:1.2.1"
+//
+//    api "com.scwang.smart:refresh-layout-kernel:2.0.3"  //核心必须依赖
+//    api "com.scwang.smart:refresh-header-classics:2.0.3"//经典刷新头
+//    api "com.scwang.smart:refresh-footer-classics:2.0.3"//经典加载
 
 }
